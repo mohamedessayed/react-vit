@@ -30,6 +30,7 @@ export default class App extends Component {
         </Route>
 
         <Route path='/contact-us' element={<Conatct/>} />
+        <Route path='/contact-us-formik' element={<Conatct/>} />
 
         <Route path='*' element={<Notfound />} />
       </Routes>

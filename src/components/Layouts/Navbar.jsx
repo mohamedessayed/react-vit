@@ -29,6 +29,10 @@ export default class Navbar extends Component {
         <li className="nav-item">
           <NavLink className="nav-link" to="/contact-us">Contact Us</NavLink>
         </li>
+
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/contact-us-formik">Contact Us vai Formik</NavLink>
+        </li>
         
         
       </ul>
