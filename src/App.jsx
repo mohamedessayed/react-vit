@@ -11,6 +11,7 @@ import DocumentionSidebar from './components/Documention/DocumentionSidebar'
 import Intorduction from './components/Documention/Intorduction'
 import GetStarted from './components/Documention/GetStarted'
 import Demo from './components/Documention/Demo'
+import Conatct from './components/Contact/Conatct'
 
 export default class App extends Component {
   render() {
@@ -26,8 +27,9 @@ export default class App extends Component {
         <Route index element={<Intorduction />} />
         <Route path='get-strated' element={<GetStarted />} />
         <Route path='demo' element={<Demo />} />
-
         </Route>
+
+        <Route path='/contact-us' element={<Conatct/>} />
 
         <Route path='*' element={<Notfound />} />
       </Routes>

@@ -26,6 +26,9 @@ export default class Navbar extends Component {
         <li className="nav-item">
           <NavLink className="nav-link" to="/documention">Doc</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/contact-us">Contact Us</NavLink>
+        </li>
         
         
       </ul>
