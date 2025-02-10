@@ -45,7 +45,7 @@ export default function ConatctFormik() {
                             <div className="input-group has-validation">
                                 <input value={values.user_name} onChange={handleChange} name='user_name' type="text" className="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" />
                                 <div className="text-danger">
-                                {errors.user_name-&&touched.user_name?errors.user_name:null}
+                                {errors.user_name&&touched.user_name?errors.user_name:null}
                             </div>
                             </div>
                         </div>
