@@ -13,6 +13,9 @@ import GetStarted from './components/Documention/GetStarted'
 import Demo from './components/Documention/Demo'
 import Conatct from './components/Contact/Conatct'
 import ConatctFormik from './components/FormikContact/ConatctFormik'
+import Container from './components/Testing/Container'
+import Test from './components/Testing/Test'
+import DemoTwo from './components/Testing/DemoTwo'
 
 export default class App extends Component {
   render() {
@@ -25,9 +28,9 @@ export default class App extends Component {
         <Route path='/functional' element={<FunctionalComponent />} />
 
         <Route path='/documention' element={<DocumentionSidebar />}>
-        <Route index element={<Intorduction />} />
-        <Route path='get-strated' element={<GetStarted />} />
-        <Route path='demo' element={<Demo />} />
+          <Route index element={<Intorduction />} />
+          <Route path='get-strated' element={<GetStarted />} />
+          <Route path='demo' element={<Demo />} />
         </Route>
 
         <Route path='/contact-us' element={<Conatct/>} />
@@ -36,7 +39,13 @@ export default class App extends Component {
         <Route path='*' element={<Notfound />} />
       </Routes>
 
-
+      {/* <Container>
+        <DemoTwo />
+        <Test />
+        <DemoTwo>
+          <LandingPage />
+        </DemoTwo>
+      </Container> */}
 
 
       <Footer />
