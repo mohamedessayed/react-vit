@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import SystemCard from '../Parts/SystemCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import ApiInstatnce from '../../API/ApiInstance';
+import Seo from '../SEO/Seo';
 
 export default class LandingPage extends Component {
     
@@ -34,6 +36,13 @@ export default class LandingPage extends Component {
 
     componentDidMount(){
         console.log('componentDidMount');
+
+        ApiInstatnce.get('everything?q=keyword')
+        .then((response)=>response.data)
+        .then(({articles})=>{
+            console.log(articles);
+            
+        })
     }
 
 
@@ -47,6 +56,7 @@ export default class LandingPage extends Component {
         const {street,city} = this.state.address;
 
         return <>
+        <Seo title={'Home'} desc={'lorem test app'} keywords={'demo, react app'} />
             <div className="container">
                 <div>
                     <h1>Hello, {username}</h1>

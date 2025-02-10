@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { Helmet } from "react-helmet"
+import Seo from "./SEO/Seo"
 
 function FunctionalComponent(){
     
@@ -8,6 +10,7 @@ function FunctionalComponent(){
     const [age,setAge] = useState(0)
     const [product,setProduct] = useState([])
 
+    
     useEffect(()=>{
         console.log('componentDidMount');
         
@@ -40,6 +43,7 @@ function FunctionalComponent(){
     }
 
     return <>
+    <Seo title={'functional component'} desc={'lorem test app'} keywords={'demo, react app'} />
         <h2>FunctionalComponent</h2>
         <h3>{username} - {age} - {product.length}</h3>
         <button onClick={updateBtn}>update</button>
