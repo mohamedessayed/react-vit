@@ -266,6 +266,7 @@ export default class Products extends Component {
 
     render() {
         return <>
+        <span>{this.props.count}</span>
         <section className='my-5'>
         <div className="container">
             <div className="row gy-3">

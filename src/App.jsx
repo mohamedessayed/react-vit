@@ -16,10 +16,13 @@ import ConatctFormik from './components/FormikContact/ConatctFormik'
 import Container from './components/Testing/Container'
 import Test from './components/Testing/Test'
 import DemoTwo from './components/Testing/DemoTwo'
+import { CounterContextProvider } from './Context/CounterContext'
 
 export default class App extends Component {
+  
   render() {
     return <>
+    <CounterContextProvider>
       <Navbar />
 
       <Routes>
@@ -49,6 +52,7 @@ export default class App extends Component {
 
 
       <Footer />
+      </CounterContextProvider>
     </>
   }
 
