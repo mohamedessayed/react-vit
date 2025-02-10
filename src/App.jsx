@@ -12,6 +12,7 @@ import Intorduction from './components/Documention/Intorduction'
 import GetStarted from './components/Documention/GetStarted'
 import Demo from './components/Documention/Demo'
 import Conatct from './components/Contact/Conatct'
+import ConatctFormik from './components/FormikContact/ConatctFormik'
 
 export default class App extends Component {
   render() {
@@ -30,7 +31,7 @@ export default class App extends Component {
         </Route>
 
         <Route path='/contact-us' element={<Conatct/>} />
-        <Route path='/contact-us-formik' element={<Conatct/>} />
+        <Route path='/contact-us-formik' element={<ConatctFormik/>} />
 
         <Route path='*' element={<Notfound />} />
       </Routes>
